@@ -1,31 +1,27 @@
 #include "Book.h"
+#include <iostream>
+using namespace std;
 
-void Book::setBookDetails(string title1, string isbn1, string author1, bool available) {
-	title = title1;
-	isbn = isbn1;
-	author = author1;
-	available = available;
+Book::Book() {
+    title = "";
+    author = "";
+    isbn = "";
+    availability = "";
+    dateAdd = "";
 }
 
-void Book::displayBookDetails() {
-	cout << "Title: " << title << endl;
-	cout << "Isbn: " << isbn << endl;
-	cout << "Author: " << author << endl;
-	cout << "Availability: " << available << endl;
+Book::Book(string t, string a, string i, string av, string d) {
+    title = t;
+    author = a;
+    isbn = i;
+    availability = av;
+    dateAdd = d;
 }
 
-void Book::returnBook() {
-	available = true;
+void Book::print() {
+    cout << "Title: " << title << endl;
+    cout << "Author: " << author << endl;
+    cout << "ISBN: " << isbn << endl;
+    cout << "Availability: " << availability << endl;
+    cout << "Date Added: " << dateAdd << endl;
 }
-bool Book::borrowBook() {
-	if (available == false) {
-		//cout << "You cannot borrow the book: " << title << endl;
-		return false;
-	}
-	else {
-		//cout << "You have borrowed the book: " << title << endl;
-		available = false;
-		return true;
-	}
-}
-
