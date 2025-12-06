@@ -1,15 +1,20 @@
-#pragma once
-#include <iostream>
-using namespace std;
+#ifndef BOOK_H
+#define BOOK_H
+
+#include <string>
+
 class Book {
 public:
-	string title;
-	string author;
-	string isbn;
-	bool available;
+    std::string title;
+    std::string author;
+    std::string isbn;
+    std::string availability;
+    std::string dateAdd;
 
-	void setBookDetails(string title, string isbn, string author, bool hasBeenBorrowed);
-	void displayBookDetails();
-	bool borrowBook();
-	void returnBook();
+    Book();
+    Book(std::string t, std::string a, std::string i, std::string av, std::string d);
+
+    void print();
 };
+
+#endif
