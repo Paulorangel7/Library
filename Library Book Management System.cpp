@@ -20,11 +20,11 @@ int main()
 {
     cout << boolalpha; // displays true instead of 1 and false instead of 0 for boolean values
    /* Book book1;
-    book1.setBookDetails("Twilight", "AAAAA", "Alex", true);
+    book1.setBookDetails("The Pragmatic Programmer", "AAAAA", "Alex", true);
     Book book2;
-    book2.setBookDetails("Sapiens", "BBBBB", "Camila", true);
+    book2.setBookDetails("Clean Code", "BBBBB", "Camila", true);
     Book book3;
-    book3.setBookDetails("Harry Potter", "CCCCC", "Zin Ko", true);*/
+    book3.setBookDetails("Introduction to Algorithms", "CCCCC", "Zin Ko", true);*/
     //TODO: ADD 2 MORE BOOKS
 
    /* arrayBook[0] = book1;
